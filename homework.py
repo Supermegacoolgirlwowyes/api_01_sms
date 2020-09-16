@@ -7,13 +7,13 @@ from twilio.rest import Client
 
 load_dotenv()
 
-twilio_sid = os.getenv('twilio_sid')
-twilio_token = os.getenv('twilio_token')
-NUMBER_FROM = os.getenv('number_from')
-NUMBER_TO = os.getenv('number_to')
-VK_TOKEN = os.getenv('vk_token')
+TWILIO_SID = os.getenv('tTWILIO_SID')
+TWILIO_TOKEN = os.getenv('TWILIO_TOKEN')
+NUMBER_FROM = os.getenv('NUMBER_FROM')
+NUMBER_TO = os.getenv('NUMBER_TO')
+VK_TOKEN = os.getenv('VK_TOKEN')
 
-client = Client(twilio_sid, twilio_token)
+client = Client(TWILIO_SID, TWILIO_TOKEN)
 
 
 def get_status(user_id):
